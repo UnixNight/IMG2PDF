@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace IMG2PDF
+﻿namespace IMG2PDF
 {
     public partial class Form2 : Form
     {
         public Form2()
         {
             InitializeComponent();
+        }
+
+        private void lnklblIcons8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("explorer.exe", "https://icons8.com");
         }
     }
 }

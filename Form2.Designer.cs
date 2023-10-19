@@ -29,33 +29,37 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            richTextBox1 = new RichTextBox();
+            lnklblIcons8 = new LinkLabel();
             SuspendLayout();
             // 
-            // richTextBox1
+            // lnklblIcons8
             // 
-            richTextBox1.Location = new Point(12, 12);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.ReadOnly = true;
-            richTextBox1.Size = new Size(776, 426);
-            richTextBox1.TabIndex = 0;
-            richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            lnklblIcons8.AutoSize = true;
+            lnklblIcons8.LinkArea = new LinkArea(23, 18);
+            lnklblIcons8.Location = new Point(13, 9);
+            lnklblIcons8.Name = "lnklblIcons8";
+            lnklblIcons8.Size = new Size(423, 452);
+            lnklblIcons8.TabIndex = 2;
+            lnklblIcons8.TabStop = true;
+            lnklblIcons8.Text = resources.GetString("lnklblIcons8.Text");
+            lnklblIcons8.UseCompatibleTextRendering = true;
+            lnklblIcons8.LinkClicked += lnklblIcons8_LinkClicked;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(richTextBox1);
+            ClientSize = new Size(448, 474);
+            Controls.Add(lnklblIcons8);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             Name = "Form2";
             Text = "Licenses";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private RichTextBox richTextBox1;
+        private LinkLabel lnklblIcons8;
     }
 }
